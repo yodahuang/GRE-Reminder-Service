@@ -10,6 +10,9 @@ function getRandomWords(amount){
   return wordArr.slice(0, amount);
 }
 
+app.get('/', function(req, res){
+  res.send("To show this is working");
+})
 
 app.get('/word', function (req, res) {
   if (req.query.all){
@@ -27,10 +30,6 @@ app.get('/word', function (req, res) {
     }
   }
 });
-
-app.get('/getAllWords', function(req, res){
-
-})
 
 app.post('/word', function(req, res){
   console.log('pushed!');
@@ -50,6 +49,6 @@ app.delete('/word', function(req, res){
   }
 })
 
-app.listen(3000, function () {
+app.listen(process.env.PORT, function () {
   console.log('Example app listening on port 3000!');
 });

@@ -19,4 +19,8 @@ I tried to find good word list API for the Pebble GRE word reminder, but I faile
 	* Request Params:
 		- `word`: The word you want to delete
 
-#### More functionalities coming soon...
+#### Waitlist
+- Validation
+	* Is there already a word in the database?
+	* Is this really a word (Call some API)
+- Statistics functionality

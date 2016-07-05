@@ -1,5 +1,6 @@
 "use strict";
 var express = require('express');
+var cors = require('cors'); 
 var app = express();
 
 var wordArr = [];
@@ -9,6 +10,8 @@ function getRandomWords(amount){
   wordArr.sort( () => (0.5 - Math.random()) );
   return wordArr.slice(0, amount);
 }
+
+app.use(cors());
 
 app.get('/', function(req, res){
   res.send("To show this is working");

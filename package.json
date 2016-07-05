@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yodahuang/GRE-Reminder-Service#readme",
   "dependencies": {
+    "cors": "^2.7.1",
     "express": "^4.14.0"
   },
   "engines": {
